@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS STUDIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <span>CONSEGNE VELOCI IN TUTTO IL MONDO</span>
+  </div>
+
+  <header>
+    <div class="logo">NEXUS<span>STUDIO</span></div>
+    <nav>
+      <a href="#collections">Collezioni</a>
+      <a href="#services">Servizi</a>
+      <button class="nav-highlight-btn" id="navShirtsBtn">T-Shirts</button>
+    </nav>
+    <div class="header-icons">
+      <div class="icon-search"></div>
+      <div class="icon-cart"><span>0</span></div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="subtitle">NUOVI CODICI DI STILE</span>
+      <h1>Linee fluide,<br>essenza minimale</h1>
+      <p>Creiamo soluzioni visive e collezioni esclusive per rendere unico il tuo business. Un modo nuovo di vivere il design.</p>
+      
+      <div class="hero-buttons">
+        <button class="btn btn-light" id="heroBtn">Scopri di più</button>
+        <button class="btn btn-outline" id="openShirtsBtn">Vedi T-Shirts</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="collections" class="section-padding hidden-reveal">
+    <div class="container">
+      <div class="categories-grid">
+        <div class="category-item">
+          <div class="circle-img img-1"></div>
+          <span>Novità</span>
+        </div>
+        <div class="category-item">
+          <div class="circle-img img-2"></div>
+          <span>Felpe</span>
+        </div>
+        <div class="category-item">
+          <div class="circle-img img-3"></div>
+          <span>Modelli Noir</span>
+        </div>
+        <div class="category-item">
+          <div class="circle-img img-4"></div>
+          <span>Accessori</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="shirts-overlay" class="overlay-panel">
+    <button class="close-overlay-btn" id="closeShirtsBtn">Chiudi X</button>
+    
+    <div class="overlay-content">
+      <span class="subtitle">Focus On</span>
+      <h2>Collezione T-Shirts</h2>
+      
+      <div class="shirts-container">
+        <div class="shirt-card">
+          <div class="shirt-img-box img-nexus"></div>
+          <h3>Nexus Black T-Shirt</h3>
+          <div class="shirt-price">24.99 €</div>
+        </div>
+        <div class="shirt-card">
+          <div class="shirt-img-box img-white-nexus"></div>
+          <h3>Nexus White T-Shirt</h3>
+          <div class="shirt-price">24.99 €</div>
+        </div>
+        <div class="shirt-card">
+          <div class="shirt-box">⚡</div>
+          <h3>1</h3>
+          <div class="shirt-price">0 €</div>
+        </div>
+        <div class="shirt-card">
+          <div class="shirt-box">✦</div>
+          <h3>2</h3>
+          <div class="shirt-price">0 €</div>
+        </div>
+        <div class="shirt-card">
+          <div class="shirt-box">🌀</div>
+          <h3>2</h3>
+          <div class="shirt-price">0 €</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="services" class="section-padding hidden-reveal">
+    <div class="container">
+      <div class="features-row">
+        <div class="feature-block">
+          <div class="f-icon">✧</div>
+          <h3>Eccellenza</h3>
+          <p>Tessuti scelti con cura, cuciture resistenti, controllo meticoloso di ogni minimo dettaglio.</p>
+        </div>
+        <div class="feature-block">
+          <div class="f-icon">✏️</div>
+          <h3>Studio Visivo</h3>
+          <p>Linee pulite, estetica geometrica, senza fronzoli. Solo la vera essenza del vestire.</p>
+        </div>
+        <div class="feature-block">
+          <div class="f-icon">🛡️</div>
+          <h3>Sicurezza</h3>
+          <p>Resi facili entro undici giorni, transazioni sicure, supporto continuo per ogni ordine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">NEXUS<span>STUDIO</span></div>
+        <p>Il design incontra il minimalismo tessile.</p>
+      </div>
+      <div>
+        <h4>Info ordini</h4>
+        <p>Scrivici: info@nexusstudio.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©️ 2026 Nexus Studio - Tutti i diritti riservati</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
