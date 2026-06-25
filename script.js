@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  const bgGlow = document.getElementById('bgGlow');
+  if (bgGlow && window.innerWidth > 1024) {
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      bgGlow.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(40, 40, 50, 0.18) 0%, rgba(5, 5, 7, 0) 65%)`;
+    });
+  }
+
   const heroBtn = document.getElementById('heroBtn');
   if (heroBtn) {
     heroBtn.addEventListener('click', () => {
@@ -42,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (shirtsOverlay) {
       shirtsOverlay.classList.add('open');
       document.body.classList.add('no-scroll');
-      setTimeout(adjustShirtImages, 100);
+      setTimeout(adjustShirtImages, 50);
     }
   };
 
@@ -61,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const obsOptions = {
     root: null,
-    threshold: 0.1,
+    threshold: 0.05,
     rootMargin: "0px"
   };
 
