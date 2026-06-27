@@ -14,30 +14,35 @@
   <div class="bg-glow" id="bgGlow"></div>
 
   <div class="top-bar">
-    <span>CONSEGNE VELOCI IN TUTTO IL MONDO</span>
+    <span class="shimmer-text">CONSEGNE VELOCI IN TUTTO IL MONDO — SPEDIZIONE GRATUITA DA 100€</span>
   </div>
 
   <header>
-    <div class="logo">NEXUS<span>STUDIO</span></div>
+    <div class="logo shine-effect">NEXUS<span>STUDIO</span></div>
     <nav>
       <a href="#collections">Collezioni</a>
-      <a href="#services">Servizi</a>
+      <a href="#services">Info</a>
       <button class="nav-highlight-btn" id="navShirtsBtn">T-Shirts</button>
     </nav>
     <div class="header-icons">
-      <div class="icon-search"></div>
-      <div class="icon-cart"><span>0</span></div>
+      <button class="icon-btn" id="searchBtn">🔍</button>
+      <div class="icon-cart" id="cartWidget">🛒 <span id="cartCount">0</span></div>
     </div>
   </header>
 
+  <div class="search-bar-container" id="searchBarContainer">
+    <input type="text" placeholder="Cerca un prodotto o una collezione..." id="searchInput">
+    <button id="closeSearchBtn">X</button>
+  </div>
+
   <section class="hero">
     <div class="hero-content">
-      <span class="subtitle animated-fade">NUOVI CODICI DI STILE</span>
-      <h1>Linee fluide,<br>essenza minimale</h1>
-      <p>Creiamo soluzioni visive e collezioni esclusive per rendere unico il tuo business. Un modo nuovo di vivere il design.</p>
+      <span class="subtitle animated-fade">DROP 01 / OUT NOW</span>
+      <h1 class="glitch-title">Cambiamo il tuo stile,<br>definiamo il futuro</h1>
+      <p>Niente compromessi. Solo streetwear essenziale, linee pulite e un fit perfetto pensato per chi non vuole passare inosservato.</p>
       
       <div class="hero-buttons">
-        <button class="btn btn-light" id="heroBtn">Scopri di più</button>
+        <button class="btn btn-light shine-button" id="heroBtn">Scopri la collezione</button>
         <button class="btn btn-outline" id="openShirtsBtn">Vedi T-Shirts</button>
       </div>
     </div>
@@ -71,15 +76,19 @@
     
     <div class="overlay-content">
       <span class="subtitle">Focus On</span>
-      <h2>Collezione T-Shirts</h2>
+      <h2 class="glow-text">Collezione T-Shirts</h2>
       
       <div class="shirts-container">
         <div class="shirt-card">
-          <div class="shirt-img-box img-nexus"></div>
+          <div class="shirt-img-box img-nexus">
+            <span class="badge">Disponibile</span>
+          </div>
           <h3>Nexus Black T-Shirt</h3>
+          <p class="shirt-desc">descrizione</p>
           <div class="shirt-price">24.99 €</div>
+          <button class="add-to-cart-btn">Aggiungi al carrello</button>
           <div class="buy-actions">
-            <span class="buy-title">Acquista ora:</span>
+            <span class="buy-title">Acquista ora via Supporto:</span>
             <div class="buy-buttons">
               <a href="https://wa.me/393770967628" target="_blank" class="buy-btn whatsapp">Scrivimi su WhatsApp</a>
               <a href="mailto:nexusstudioita@gmail.com" class="buy-btn email">nexusstudioita@gmail.com</a>
@@ -88,11 +97,15 @@
         </div>
         
         <div class="shirt-card">
-          <div class="shirt-img-box img-white-nexus"></div>
+          <div class="shirt-img-box img-white-nexus">
+            <span class="badge">Disponibile</span>
+          </div>
           <h3>Nexus White T-Shirt</h3>
+          <p class="shirt-desc">descrizione</p>
           <div class="shirt-price">24.99 €</div>
+          <button class="add-to-cart-btn">Aggiungi al carrello</button>
           <div class="buy-actions">
-            <span class="buy-title">Acquista ora:</span>
+            <span class="buy-title">Acquista ora via Supporto:</span>
             <div class="buy-buttons">
               <a href="https://wa.me/393770967628" target="_blank" class="buy-btn whatsapp">Scrivimi su WhatsApp</a>
               <a href="mailto:nexusstudioita@gmail.com" class="buy-btn email">nexusstudioita@gmail.com</a>
@@ -101,37 +114,15 @@
         </div>
 
         <div class="shirt-card">
-          <div class="shirt-box">⚡</div>
-          <h3>t-shirt</h3>
-          <div class="shirt-price">0 €</div>
-          <div class="buy-actions">
-            <span class="buy-title">Acquista ora:</span>
-            <div class="buy-buttons">
-              <a href="https://wa.me/393770967628" target="_blank" class="buy-btn whatsapp">Scrivimi su WhatsApp</a>
-              <a href="mailto:nexusstudioita@gmail.com" class="buy-btn email">nexusstudioita@gmail.com</a>
-            </div>
+          <div class="shirt-box">⚡
+            <span class="badge stock-low">Ultimi pezzi</span>
           </div>
-        </div>
-
-        <div class="shirt-card">
-          <div class="shirt-box">✦</div>
-          <h3>T-shirt</h3>
+          <h3>prodotto</h3>
+          <p class="shirt-desc"></p>
           <div class="shirt-price">0 €</div>
+          <button class="add-to-cart-btn">Aggiungi al carrello</button>
           <div class="buy-actions">
-            <span class="buy-title">Acquista ora:</span>
-            <div class="buy-buttons">
-              <a href="https://wa.me/393770967628" target="_blank" class="buy-btn whatsapp">Scrivimi su WhatsApp</a>
-              <a href="mailto:nexusstudioita@gmail.com" class="buy-btn email">nexusstudioita@gmail.com</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="shirt-card">
-          <div class="shirt-box">🌀</div>
-          <h3>T-Shirt</h3>
-          <div class="shirt-price">0 €</div>
-          <div class="buy-actions">
-            <span class="buy-title">Acquista ora:</span>
+            <span class="buy-title">Acquista ora via Supporto:</span>
             <div class="buy-buttons">
               <a href="https://wa.me/393770967628" target="_blank" class="buy-btn whatsapp">Scrivimi su WhatsApp</a>
               <a href="mailto:nexusstudioita@gmail.com" class="buy-btn email">nexusstudioita@gmail.com</a>
@@ -139,6 +130,24 @@
           </div>
         </div>
       </div>
+
+      <div class="support-section">
+        <h3 class="support-title">Serve aiuto con l'ordine?</h3>
+        <p class="support-text">Il nostro servizio clienti è attivo 24/7. Puoi effettuare l'ordine direttamente parlando con un nostro assistente.</p>
+        <div class="support-grid">
+          <a href="https://wa.me/393770967628" target="_blank" class="support-card-btn">
+            <span class="support-icon">💬</span>
+            <strong>Supporto Live WhatsApp</strong>
+            <span>+39 377 096 7628</span>
+          </a>
+          <a href="mailto:nexusstudioita@gmail.com" class="support-card-btn">
+            <span class="support-icon">✉️</span>
+            <strong>E-mail Ufficiale</strong>
+            <span>nexusstudioita@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -147,18 +156,18 @@
       <div class="features-row">
         <div class="feature-block">
           <div class="f-icon">✧</div>
-          <h3>Eccellenza</h3>
-          <p>Tessuti scelti con cura, cuciture resistenti, controllo meticoloso di ogni minimo dettaglio.</p>
+          <h3>Eccellenza Tessile</h3>
+          <p>Tessuti scelti con cura, cuciture resistenti, controllo meticoloso di ogni minimo dettaglio per una durata eterna.</p>
         </div>
         <div class="feature-block">
           <div class="f-icon">✏️</div>
           <h3>Studio Visivo</h3>
-          <p>Linee pulite, estetica geometrica, senza fronzoli. Solo la vera essenza del vestire.</p>
+          <p>Linee pulite, estetica geometrica, senza fronzoli. Solo la vera essenza del vestire contemporaneo.</p>
         </div>
         <div class="feature-block">
           <div class="f-icon">🛡️</div>
-          <h3>Sicurezza</h3>
-          <p>Resi facili entro undici giorni, transazioni sicure, supporto continuo per ogni ordine.</p>
+          <h3>Spedizioni Assicurate</h3>
+          <p>Resi facili entro 14 giorni, transazioni tracciate e supporto continuo per qualsiasi evenienza con l'ordine.</p>
         </div>
       </div>
     </div>
@@ -171,8 +180,9 @@
         <p>Il design incontra il minimalismo tessile.</p>
       </div>
       <div>
-        <h4>Info ordini</h4>
-        <p>Scrivici: info@nexusstudio.com</p>
+        <h4>Info & Supporto</h4>
+        <p>WhatsApp: +39 377 096 7628</p>
+        <p>Email: nexusstudioita@gmail.com</p>
       </div>
     </div>
     <div class="footer-bottom">
