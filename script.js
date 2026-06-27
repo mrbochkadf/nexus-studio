@@ -5,9 +5,46 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mousemove', (e) => {
       const x = (e.clientX / window.innerWidth) * 100;
       const y = (e.clientY / window.innerHeight) * 100;
-      bgGlow.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(40, 40, 50, 0.18) 0%, rgba(5, 5, 7, 0) 65%)`;
+      bgGlow.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(60, 60, 60, 0.18) 0%, rgba(3, 3, 3, 0) 65%)`;
     });
   }
+
+  const searchBtn = document.getElementById('searchBtn');
+  const closeSearchBtn = document.getElementById('closeSearchBtn');
+  const searchBarContainer = document.getElementById('searchBarContainer');
+
+  if (searchBtn && searchBarContainer) {
+    searchBtn.addEventListener('click', () => {
+      searchBarContainer.classList.toggle('active');
+      if (searchBarContainer.classList.contains('active')) {
+        const input = document.getElementById('searchInput');
+        if (input) input.focus();
+      }
+    });
+  }
+
+  if (closeSearchBtn && searchBarContainer) {
+    closeSearchBtn.addEventListener('click', () => {
+      searchBarContainer.classList.remove('active');
+    });
+  }
+
+  let cartCountValue = 0;
+  const cartCount = document.getElementById('cartCount');
+  const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+  addToCartButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      cartCountValue++;
+      if (cartCount) {
+        cartCount.textContent = cartCountValue;
+        cartCount.style.transform = 'scale(1.3)';
+        setTimeout(() => {
+          cartCount.style.transform = 'scale(1)';
+        }, 200);
+      }
+    });
+  });
 
   const heroBtn = document.getElementById('heroBtn');
   if (heroBtn) {
